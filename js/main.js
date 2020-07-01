@@ -18,7 +18,7 @@
 
         if(check) {
             jQuery(".container-login100").fadeOut(1500);
-            
+
             setTimeout(function() {
                 jQuery(".gallery-wrap").show();
             }, 1500);
@@ -42,7 +42,7 @@
         }
         else {
             if($(input).val().trim() == '' 
-                || $(input).val().trim() != "дуду"){
+                || $(input).val().trim().toLowerCase() != "дуду"){
                 return false;
             }
         }
@@ -71,9 +71,11 @@
           height: '100%'
         });
 
-        var happyBirthdayAudio = document.getElementById("happy-birthday-audio");
-        happyBirthdayAudio.play();
-        happyBirthdayAudio.muted = false;
+        setTimeout(function() {
+            var happyBirthdayAudio = document.getElementById("happy-birthday-audio");
+            happyBirthdayAudio.muted = false;
+            happyBirthdayAudio.play();
+        }, 500);
 
         setTimeout(function() {
             jQuery("#fireworksField").fadeOut(1500);
