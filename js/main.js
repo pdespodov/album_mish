@@ -16,7 +16,15 @@
             }
         }
 
-        return check;
+        if(check) {
+            jQuery(".container-login100").fadeOut(1500);
+            
+            setTimeout(function() {
+                jQuery(".gallery-wrap").show();
+            }, 1500);
+        }
+
+        return false;
     });
 
 
@@ -33,7 +41,8 @@
             }
         }
         else {
-            if($(input).val().trim() == ''){
+            if($(input).val().trim() == '' 
+                || $(input).val().trim() != "дуду"){
                 return false;
             }
         }
@@ -50,16 +59,6 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-
-    jQuery(".fa-volume-up").click(function() {
-        jQuery(this).hide();
-        jQuery(".fa-volume-off").show();
-    });
-
-    jQuery(".fa-volume-off").click(function() {
-        jQuery(this).hide();
-        jQuery(".fa-volume-up").show();
-    });
 
     jQuery("#animated-button1").click(function() {
         jQuery(".container-login100").show();
@@ -78,12 +77,21 @@
 
         setTimeout(function() {
             jQuery("#fireworksField").fadeOut(1500);
-            jQuery(".login100-form-title").fadeIn(3000);
-            jQuery(".wrap-input100").fadeIn(3000);
-            jQuery(".container-login100-form-btn").fadeIn(3000);
-            jQuery(".fa-volume-up").fadeIn(3000);
 
+            setTimeout(function() {
+                jQuery(".login100-form-title").css("visibility","visible").hide().fadeIn(3000);
+            }, 1500);
+
+             setTimeout(function() {
+                jQuery(".wrap-input100").css("visibility","visible").hide().fadeIn(3000);
+            }, 2500);
+
+              setTimeout(function() {
+                jQuery(".container-login100-form-btn").css("visibility","visible").hide().fadeIn(3000);
+            }, 3500);
         }, 24000)
     });
+
+
 
 })(jQuery);
