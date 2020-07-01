@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V12</title>
+	<title>Мишешка страничка</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -26,32 +26,52 @@
 <body>
 	
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/pink_background.jpg');">
+		<div class="container-login100" style="background-image: url('images/pink_background.jpg'); display: none;">
+		 	<audio autoplay="true" muted="true" controls style="display: none;" id="happy-birthday-audio">
+  				<source src="assets/happy_birthday.mp3" type="audio/mpeg">
+			</audio> 
+
 			<div class="wrap-login100 p-b-30">
 				<form class="login100-form validate-form">
 					<div class="login100-form-avatar">
 						<img src="images/mouse.jpg" alt="AVATAR">
 					</div>
 
-					<span class="login100-form-title p-t-20 p-b-25">
+					<span class="login100-form-title p-t-20 p-b-25"
+						style="display: none;">
 						Само мишлето, което обичам, може да продължи нататък
 					</span>
 
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Пробвай пак, мишле">
-						<input class="input100" type="text" name="username" placeholder="Как е 'Обичам те' на мишешки? ">
+					<div class="wrap-input100 validate-input m-b-10" data-validate = "Пробвай пак, мишле"
+						style="display: none;">
+						<input class="input100" type="text" name="username" autocomplete="off"
+							placeholder="Как е 'Обичам те' на мишешки? ">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
 						</span>
 					</div>
 
-					<div class="container-login100-form-btn p-t-10">
+					<div class="container-login100-form-btn p-t-10"
+						style="display: none;">
 						<button class="login100-form-btn">
 							Отговор
 						</button>
 					</div>
+
+					<iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 				</form>
 			</div>
+		</div>
+
+		<div class="initial-wrap">
+			<a href="#" class="animated-button1" id="animated-button1">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  ЧЕСТИТ РОЖДЕН ДЕН!!!
+			</a>
 		</div>
 	</div>
 	
@@ -60,6 +80,7 @@
 	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.fireworks.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

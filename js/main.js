@@ -50,7 +50,40 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
+
+    jQuery(".fa-volume-up").click(function() {
+        jQuery(this).hide();
+        jQuery(".fa-volume-off").show();
+    });
+
+    jQuery(".fa-volume-off").click(function() {
+        jQuery(this).hide();
+        jQuery(".fa-volume-up").show();
+    });
+
+    jQuery("#animated-button1").click(function() {
+        jQuery(".container-login100").show();
+        jQuery(".initial-wrap").hide();
+
+        jQuery(".wrap-login100").fireworks({
+          sound: false,
+          opacity: 0.5,
+          width: '100%',
+          height: '100%'
+        });
+
+        var happyBirthdayAudio = document.getElementById("happy-birthday-audio");
+        happyBirthdayAudio.play();
+        happyBirthdayAudio.muted = false;
+
+        setTimeout(function() {
+            jQuery("#fireworksField").fadeOut(1500);
+            jQuery(".login100-form-title").fadeIn(3000);
+            jQuery(".wrap-input100").fadeIn(3000);
+            jQuery(".container-login100-form-btn").fadeIn(3000);
+            jQuery(".fa-volume-up").fadeIn(3000);
+
+        }, 24000)
+    });
 
 })(jQuery);
