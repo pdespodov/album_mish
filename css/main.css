@@ -551,6 +551,11 @@ iframe {
   display: none;
 }
 
+.camera-li {
+  display: flex;
+  justify-content: center;
+}
+
 /*
  * Animated CSS button
  * Copyright Alexander Bodin 2019-09-07
