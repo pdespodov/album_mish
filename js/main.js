@@ -17,7 +17,7 @@
         }
 
         if(check) {
-            jQuery(".container-login100").fadeOut(1500);
+            jQuery(".container-login100").fadeOut(1500);    
 
             setTimeout(function() {
                 jQuery(".gallery-wrap").show();

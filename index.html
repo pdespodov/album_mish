@@ -21,6 +21,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/city-gallery.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -57,8 +58,6 @@
 							Отговор
 						</button>
 					</div>
-
-					<iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 				</form>
 			</div>
 		</div>
@@ -74,7 +73,37 @@
 		</div>
 
 		<div class="gallery-wrap">
-			This is a gallery
+			<div id="container">
+				<div class="slide anim-in">
+					<div class="image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/venice.jpg);"></div>
+					<div class="overlay"></div>
+					<div class="content">
+					<h1 class="title" data-title="Venice">Venice</h1>
+					<div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/italian-emblem.svg);"></div>
+					<ul class="city-info">
+					<li class="country">Country: Italy</li>
+					<li class="founded">Founded: 697</li>
+					<li class="population">Population: 260,060</li>
+					</ul>
+					</div>
+					<div class="btn-close"></div>
+				</div>
+
+				<div class="slide anim-in">
+					<div class="image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/paris.jpg);"></div>
+					<div class="overlay"></div>
+					<div class="content">
+					<h1 class="title" data-title="Paris">Paris</h1>
+					<div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/french-emblem.svg);"></div>
+					<ul class="city-info">
+					<li class="country">Country: France</li>
+					<li class="founded">Founded: ~250BC</li>
+					<li class="population">Population: 2.2 Million</li>
+					</ul>
+					</div>
+					<div class="btn-close"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -91,6 +120,7 @@
 	<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="js/city-gallery.js"></script>
 
 </body>
 </html>
