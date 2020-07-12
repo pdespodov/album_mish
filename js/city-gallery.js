@@ -6,6 +6,10 @@
         if ($target.hasClass('slide') && !$target.hasClass('active') && !$target.siblings().hasClass('active')) {
             $target.removeClass('anim-in last-viewed').addClass('active')
             $target.siblings().removeClass('anim-in last-viewed').addClass('anim-out');
+
+            setTimeout(function() {
+                $target.find(".btn-more").show();
+            }, 3200);
         }
     }
 
@@ -13,6 +17,8 @@
         var $slide = $(e.target).parent();
         $slide.removeClass('active anim-in').addClass('last-viewed');
         $slide.siblings().removeClass('anim-out').addClass('anim-in');
+
+        $slide.find(".btn-more").hide();
     }
 
     $(function() {

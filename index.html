@@ -60,6 +60,24 @@
 					</div>
 				</form>
 			</div>
+
+			<div class="wrap-choice" style="display: none;">
+				<div class="login100-form-avatar">
+					<img src="images/mouse.jpg" alt="AVATAR">
+				</div>
+
+				<div class="p-t-10">
+					<button class="login100-form-btn choice-button" id="album-button">
+						Албум
+					</button>
+				</div>
+
+				<div class="p-t-10">
+					<button class="login100-form-btn choice-button" id="video-button">
+						Видео
+					</button>
+				</div>
+			</div>
 		</div>
 
 		<div class="initial-wrap">
@@ -73,6 +91,12 @@
 		</div>
 
 		<div class="gallery-wrap">
+			<div class="back">
+				<button class="login100-form-btn back-button" id="album-back-button">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Назад
+				</button>
+			</div>
+
 			<div id="container">
 				<div class="slide anim-in">
 					<div class="image" style="background-image: url(images/prague.jpg);"></div>
@@ -81,12 +105,14 @@
 					<h1 class="title" data-title="Прага">Прага</h1>
 					<div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/czech-emblem.svg);"></div>
 					<ul class="city-info">
-						<li class="camera-li"><i class="fa fa-camera"></i></li>
 						<li class="founded">Мястото, към което тръгнах леко притеснен, но където открих колко е прекрасно с теб.</li>
 						<li>Няма да забравя как се разхождахме из калдъръмените улички, хванати за ръка, с коминче в другата.</li>
 					</ul>
 					</div>
 					<div class="btn-close"></div>
+					<div class="btn-more" id="prague-more">
+						<p><i class="fa fa-camera"></i></p>
+					</div>
 				</div>
 
 				<div class="slide anim-in">
@@ -96,12 +122,14 @@
 					<h1 class="title" data-title="Пловдив">Пловдив</h1>
 					<div class="emblem" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Plovdiv-coat-of-arms.svg/800px-Plovdiv-coat-of-arms.svg.png);"></div>
 					<ul class="city-info">
-						<li class="camera-li"><i class="fa fa-camera"></i></li>
 						<li>Мястото, където гледам как се усмихваш в този момент. Усмивката и блесналите очи, в които се влюбих.</li>
 						<li>И си мисля как ме правиш щастлив, и всичко си заслужава.</li>
 					</ul>
 					</div>
 					<div class="btn-close"></div>
+					<div class="btn-more" id="plovdiv-more">
+						<p><i class="fa fa-camera"></i></p>
+					</div>
 				</div>
 
 				<div class="slide anim-in">
@@ -111,13 +139,66 @@
 					<h1 class="title" data-title="Париж">Париж</h1>
 					<div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/french-emblem.svg);"></div>
 					<ul class="city-info">
-						<li class="camera-li"><i class="fa fa-camera"></i></li>
 						<li>Мястото, където прекарах най-страхотния си Рожден Ден...с теб.</li>
 						<li>Светлините на Париж, Айфеловата кула в далечината, и ти до мен.</li>
 					</ul>
 					</div>
 					<div class="btn-close"></div>
+					<div class="btn-more" id="paris-more">
+						<p><i class="fa fa-camera"></i></p>
+					</div>
 				</div>
+			</div>
+		</div>
+
+		<div id="prague-wrap" style="display: none;">
+			<div class="back">
+				<button class="login100-form-btn back-button" id="prague-back-button">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Назад
+				</button>
+			</div>
+			<div class="container-lightbox">
+				<div class="top-lightbox">
+			    	<ul>
+			        	<li><a href="#img_1"><img src="images/prague_album/prague1.jpg"></a></li>
+			            <li><a href="#img_3"><img src="images/prague_album/prague3.jpg"></a></li>
+			            <li><a href="#img_4"><img src="images/prague_album/prague4.jpg"></a></li>
+			            <li><a href="#img_5"><img src="images/prague_album/prague5.jpg"></a></li>
+			            <li><a href="#img_6"><img src="images/prague_album/prague6.jpg"></a></li>
+			            <li><a href="#img_7"><img src="images/prague_album/prague7.jpg"></a></li>
+			            <li><a href="#img_8"><img src="images/prague_album/prague8.jpg"></a></li>
+			            <li><a href="#img_9"><img src="images/prague_album/prague9.jpg"></a></li>
+			            <li><a href="#img_10"><img src="images/prague_album/prague10.jpg"></a></li>
+			            <li><a href="#img_11"><img src="images/prague_album/prague11.jpg"></a></li>
+			            <li><a href="#img_12"><img src="images/prague_album/prague12.jpg"></a></li>
+			            <li><a href="#img_13"><img src="images/prague_album/prague13.jpg"></a></li>
+			            <li><a href="#img_14"><img src="images/prague_album/prague14.jpg"></a></li>
+			            <li><a href="#img_15"><img src="images/prague_album/prague15.jpg"></a></li>
+			            <li><a href="#img_16"><img src="images/prague_album/prague16.jpg"></a></li>
+			            <li><a href="#img_17"><img src="images/prague_album/prague17.jpg"></a></li>
+			            <li><a href="#img_18"><img src="images/prague_album/prague18.jpg"></a></li>
+			            <li><a href="#img_19"><img src="images/prague_album/prague19.jpg"></a></li>
+			        </ul>
+
+			        <a href="#_1" class="lightbox trans" id="img_1"><img src="images/prague_album/prague1.jpg"></a>
+			        <a href="#_3" class="lightbox trans" id="img_3"><img src="images/prague_album/prague3.jpg"></a>
+			        <a href="#_4" class="lightbox trans" id="img_4"><img src="images/prague_album/prague4.jpg"></a>
+			        <a href="#_5" class="lightbox trans" id="img_5"><img src="images/prague_album/prague5.jpg"></a>
+			        <a href="#_6" class="lightbox trans" id="img_6"><img src="images/prague_album/prague6.jpg"></a>
+			        <a href="#_7" class="lightbox trans" id="img_7"><img src="images/prague_album/prague7.jpg"></a>
+			        <a href="#_8" class="lightbox trans" id="img_8"><img src="images/prague_album/prague8.jpg"></a>
+			        <a href="#_9" class="lightbox trans" id="img_9"><img src="images/prague_album/prague9.jpg"></a>
+			        <a href="#_10" class="lightbox trans" id="img_10"><img src="images/prague_album/prague10.jpg"></a>
+			        <a href="#_11" class="lightbox trans" id="img_11"><img src="images/prague_album/prague11.jpg"></a>
+			        <a href="#_12" class="lightbox trans" id="img_12"><img src="images/prague_album/prague12.jpg"></a>
+			        <a href="#_13" class="lightbox trans" id="img_13"><img src="images/prague_album/prague13.jpg"></a>
+			        <a href="#_14" class="lightbox trans" id="img_14"><img src="images/prague_album/prague14.jpg"></a>
+			        <a href="#_15" class="lightbox trans" id="img_15"><img src="images/prague_album/prague15.jpg"></a>
+			        <a href="#_16" class="lightbox trans" id="img_16"><img src="images/prague_album/prague16.jpg"></a>
+			        <a href="#_16" class="lightbox trans" id="img_17"><img src="images/prague_album/prague17.jpg"></a>
+			        <a href="#_16" class="lightbox trans" id="img_18"><img src="images/prague_album/prague18.jpg"></a>
+			        <a href="#_16" class="lightbox trans" id="img_19"><img src="images/prague_album/prague19.jpg"></a>
+    			</div>
 			</div>
 		</div>
 	</div>

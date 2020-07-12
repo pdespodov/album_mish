@@ -406,3 +406,25 @@
     left: -100%;
   }
 }
+
+.btn-more {
+  cursor: pointer;
+  pointer-events: auto;
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  right: 70px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: none;
+}
+
+.btn-more p {
+  color: white;
+  font-size: 19px;
+}
+
+
