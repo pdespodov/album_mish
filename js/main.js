@@ -134,6 +134,22 @@
         }, 1500);
     });
 
+    jQuery("#video-button").click(function() {
+        jQuery(".container-login100").fadeOut(1500);   
+
+        setTimeout(function() {
+            jQuery("#video-wrap").show();
+        }, 1500);
+    });
+
+    jQuery("#video-back-button").click(function() {
+        jQuery("#video-wrap").fadeOut(1500);   
+
+        setTimeout(function() {
+            jQuery(".container-login100").show();
+        }, 1500);
+    });
+
     jQuery("#prague-more").click(function() {
         jQuery(".gallery-wrap").fadeOut(1500);
 
