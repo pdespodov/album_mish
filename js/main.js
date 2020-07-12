@@ -126,11 +126,37 @@
         }, 1500);
     });
 
+    jQuery("#paris-back-button").click(function() {
+        jQuery("#paris-wrap").fadeOut(1500);   
+
+        setTimeout(function() {
+            jQuery(".gallery-wrap").show();
+        }, 1500);
+    });
+
+    jQuery("#prague-more").click(function() {
+        jQuery(".gallery-wrap").fadeOut(1500);
+
+        setTimeout(function() {
+            jQuery("#prague-wrap").show();
+        }, 1500);
+
+    });
+
     jQuery("#plovdiv-more").click(function() {
         jQuery(".gallery-wrap").fadeOut(1500);
 
         setTimeout(function() {
             jQuery("#plovdiv-wrap").show();
+        }, 1500);
+
+    });
+
+    jQuery("#paris-more").click(function() {
+        jQuery(".gallery-wrap").fadeOut(1500);
+
+        setTimeout(function() {
+            jQuery("#paris-wrap").show();
         }, 1500);
 
     });
