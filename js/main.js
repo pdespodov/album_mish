@@ -118,11 +118,19 @@
         }, 1500);
     });
 
-    jQuery("#prague-more").click(function() {
+    jQuery("#plovdiv-back-button").click(function() {
+        jQuery("#plovdiv-wrap").fadeOut(1500);   
+
+        setTimeout(function() {
+            jQuery(".gallery-wrap").show();
+        }, 1500);
+    });
+
+    jQuery("#plovdiv-more").click(function() {
         jQuery(".gallery-wrap").fadeOut(1500);
 
         setTimeout(function() {
-            jQuery("#prague-wrap").show();
+            jQuery("#plovdiv-wrap").show();
         }, 1500);
 
     });
